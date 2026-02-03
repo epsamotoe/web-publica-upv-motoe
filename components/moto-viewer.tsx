@@ -3,6 +3,7 @@
 import { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Stage, useGLTF, Html } from "@react-three/drei"
+import { cn } from "@/lib/utils"
 
 function Model() {
     const { scene } = useGLTF("/models/BlenderMotoE.glb")
@@ -21,18 +22,28 @@ function Loader() {
     )
 }
 
-export function MotoViewer() {
+export function MotoViewer({ className }: { className?: string }) {
     return (
-        <div className="h-[600px] md:h-[700px] w-full relative z-10 flex items-center justify-center">
-            <Canvas dpr={[1, 1.5]} gl={{ alpha: true, antialias: true }} camera={{ position: [0, 1, 4], fov: 50 }}>
+        <div className={cn("relative w-full h-full min-h-[400px] overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/20", className)}>
+            {/* Scanner Effect */}
+            <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden rounded-xl">
+                <div className="w-full h-[2px] bg-[#00cc88]/50 shadow-[0_0_15px_rgba(0,204,136,0.5)] animate-scan" />
+            </div>
+
+            {/* HUD Corners */}
+            <div className="absolute top-4 left-4 w-6 h-6 border-l-2 border-t-2 border-[#00cc88]/50 rounded-tl-sm z-30 opacity-70" />
+            <div className="absolute top-4 right-4 w-6 h-6 border-r-2 border-t-2 border-[#00cc88]/50 rounded-tr-sm z-30 opacity-70" />
+            <div className="absolute bottom-4 left-4 w-6 h-6 border-l-2 border-b-2 border-[#00cc88]/50 rounded-bl-sm z-30 opacity-70" />
+            <div className="absolute bottom-4 right-4 w-6 h-6 border-r-2 border-b-2 border-[#00cc88]/50 rounded-br-sm z-30 opacity-70" />
+
+            <Canvas dpr={[1, 1.5]} gl={{ alpha: true, antialias: true }} camera={{ position: [0, 2, 6], fov: 40 }}>
                 <Suspense fallback={<Loader />}>
                     <Stage
                         environment="studio"
-                        intensity={0.8}
+                        intensity={1}
                         contactShadows={{
                             opacity: 0.5,
-                            blur: 1.5,
-                            resolution: 1024
+                            blur: 2,
                         }}
                     >
                         <Model />
@@ -40,7 +51,7 @@ export function MotoViewer() {
                 </Suspense>
                 <OrbitControls
                     autoRotate
-                    autoRotateSpeed={3.0}
+                    autoRotateSpeed={2.0}
                     enableZoom={false}
                     enablePan={false}
                     minPolarAngle={Math.PI / 3}
