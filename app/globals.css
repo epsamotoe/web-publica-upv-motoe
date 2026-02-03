@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Background Patterns */
+.bg-carbon-fiber {
+  background-color: #080808;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg fill='%231a1a1a' fill-opacity='1'%3E%3Cpath d='M0 0h2v2H0V0zm2 2h2v2H2V2zm2 2h2v2H4V4zm2 2h2v2H6V6zm2 2h2v2H8V8zm2 2h2v2h-2v-2z'/%3E%3Cpath d='M0 4h2v2H0V4zm2 2h2v2H2V6zm2 2h2v2H4V8zm2 2h2v2H6v-2zm-6 4h2v2H0v-2z' section='left'/%3E%3Cpath d='M12 0h-2v2h2V0zm-2 2h-2v2h2V2zm-2 2h-2v2h2V4zm-2 2h-2v2h2V6z' section='right'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 16px 16px;
+}
+
+/* ... (rest of the file until @layer base) */
+
+@layer base {
+
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--border);
+  }
+
+  * {
+    border: 1px solid var(--border);
+    outline-color: var(--ring);
+  }
+
+  body {
+    color: var(--foreground);
+    background-color: transparent;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
