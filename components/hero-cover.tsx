@@ -2,16 +2,20 @@
 
 import { motion } from "framer-motion"
 import { ChevronDown } from "lucide-react"
+import Image from "next/image"
 
 export function HeroCover() {
     return (
         <section className="relative h-screen w-full overflow-hidden bg-[#0a0a0a]">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <img
+                <Image
                     src="/hero-moto.jpg"
                     alt="UPV MotoE Racing Prototype"
-                    className="w-full h-full object-cover object-center md:object-top opacity-90"
+                    fill
+                    priority
+                    className="object-cover object-center md:object-top opacity-90"
+                    sizes="100vw"
                 />
                 {/* Bottom Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]" />
