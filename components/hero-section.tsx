@@ -4,6 +4,7 @@ import { TypewriterText } from "./typewriter-text"
 import { AnimatedGrid } from "./animated-grid"
 import { ChevronDown, Zap, Timer, Gauge } from "lucide-react"
 import { BentoCard } from "@/components/ui/bento-card"
+import { MotoViewer } from "./moto-viewer"
 
 export function HeroSection() {
   return (
@@ -58,38 +59,9 @@ export function HeroSection() {
       </div>
 
       {/* 3D Motorcycle Render Slot */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <BentoCard className="aspect-[21/9] w-full shadow-[0_0_60px_rgba(0,204,136,0.15)]">
-          {/* Rotating Motorcycle Container */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div
-              className="w-full h-full flex items-center justify-center"
-              style={{
-                animation: "spin360 20s linear infinite",
-              }}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop&q=80"
-                alt="Electric Racing Motorcycle - 3D Render Placeholder"
-                className="max-w-[80%] max-h-[80%] object-contain drop-shadow-[0_0_40px_rgba(0,204,136,0.3)]"
-              />
-            </div>
-          </div>
-
-          {/* Overlay Grid Effect */}
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,204,136,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,204,136,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
-
-          {/* Corner Accents */}
-          <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#00cc88]/50" />
-          <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#00cc88]/50" />
-          <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#00cc88]/50" />
-          <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#00cc88]/50" />
-
-          {/* Label */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-[#0a0a0a]/80 backdrop-blur-sm rounded-full border border-[#00cc88]/30">
-            <span className="text-[#00cc88] text-xs font-mono tracking-wider">3D RENDER SLOT</span>
-          </div>
-        </BentoCard>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 -mt-8 mb-8">
+        {/* Adjusted margins to pull it closer to proper position if needed */}
+        <MotoViewer />
       </div>
 
       {/* Stats */}
