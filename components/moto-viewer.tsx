@@ -2,22 +2,40 @@
 
 import { Suspense, useRef } from "react"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls, Stage, useGLTF, Html } from "@react-three/drei"
+import { OrbitControls, Stage, useGLTF, Html, useProgress } from "@react-three/drei"
 import { cn } from "@/lib/utils"
 import { useInView } from "framer-motion"
 
 function Model() {
-    const { scene } = useGLTF("/models/NewMotoE.glb")
+    const { scene } = useGLTF("/models/BlenderCarbonFiber.glb")
     return <primitive object={scene} />
 }
 
 function Loader() {
+    const { progress } = useProgress()
     return (
         <Html center>
-            <div className="flex flex-col items-center justify-center whitespace-nowrap">
-                <span className="text-[#00cc88] font-bold text-lg animate-pulse tracking-widest font-[family-name:var(--font-display)]">
+            <div className="flex flex-col items-center justify-center p-4 bg-zinc-950/80 rounded-lg border border-[#00cc88]/30 backdrop-blur-sm min-w-[280px]">
+                <div className="flex justify-between w-full mb-2 text-xs font-mono text-[#00cc88]/80">
+                    <span>SYSTEM_BOOT</span>
+                    <span>{progress.toFixed(0)}%</span>
+                </div>
+
+                {/* Progress Bar Container */}
+                <div className="w-full h-1 bg-zinc-800 rounded-full overflow-hidden mb-2">
+                    <div
+                        className="h-full bg-[#00cc88] transition-all duration-200 ease-out shadow-[0_0_10px_rgba(0,204,136,0.5)]"
+                        style={{ width: `${progress}%` }}
+                    />
+                </div>
+
+                <div className="text-[#00cc88] font-bold text-sm tracking-widest font-[family-name:var(--font-display)] animate-pulse">
                     CARGANDO INGENIERÍA...
-                </span>
+                </div>
+
+                <div className="mt-2 text-[10px] text-zinc-500 font-mono">
+                    MODEL: MOTO-E_PROTOTYPE_V2
+                </div>
             </div>
         </Html>
     )
@@ -84,4 +102,4 @@ export function MotoViewer({ className }: { className?: string }) {
     )
 }
 
-useGLTF.preload("/models/NewMotoE.glb")
+useGLTF.preload("/models/BlenderCarbonFiber.glb")
