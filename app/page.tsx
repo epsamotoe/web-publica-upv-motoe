@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 // import { BentoGrid } from "@/components/bento-grid"
+import { BentoGrid } from "@/components/bento-grid"
 import { Team } from "@/components/Team"
 import { TeamSection } from "@/components/team-section"
 import { SponsorsSection } from "@/components/sponsors-section"
@@ -12,8 +13,8 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#0a0a0a]">
       <Navigation />
       <HeroSection />
-      {/* <BentoGrid /> */}
       <Team />
+      <BentoGrid />
       <TeamSection />
       <SponsorsSection />
       <ContactSection />

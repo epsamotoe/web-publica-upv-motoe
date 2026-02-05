@@ -32,49 +32,15 @@ export function BentoGrid() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 text-sm font-medium text-[#00cc88] bg-[#00cc88]/10 border border-[#00cc88]/20 rounded-full mb-4">
-              EL EQUIPO
+              LIDERAZGO
             </span>
             <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-black text-white mb-4">
-              Las personas detrás de{" "}
-              <span className="text-[#00cc88]">la máquina</span>
+              Nuestros <span className="text-[#00cc88]">Coordinadores</span>
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto text-lg">
-              Estudiantes de ingeniería con pasión por la competición y
-              la innovación en movilidad eléctrica.
+              La dirección técnica y humana que impulsa el proyecto.
             </p>
           </div>
-        </ScrollReveal>
-
-        {/* Team Photo - Full Width Horizontal */}
-        <ScrollReveal className="mb-6">
-          <BentoCard className="w-full aspect-[21/9] group shadow-[0_0_40px_rgba(0,204,136,0.1)]">
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&h=600&fit=crop&q=80"
-              alt="Equipo completo UPV MotoE 2026"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
-
-            {/* Corner Accents */}
-            <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-[#00cc88]/50" />
-            <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-[#00cc88]/50" />
-            <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-[#00cc88]/50" />
-            <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-[#00cc88]/50" />
-
-            {/* Label */}
-            <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8">
-              <span className="text-xs font-mono tracking-wider text-[#00cc88]/80 bg-[#0a0a0a]/60 backdrop-blur-sm px-3 py-1 rounded-full border border-[#00cc88]/30">
-                EQUIPO COMPLETO 2026
-              </span>
-              <h3 className="font-[family-name:var(--font-display)] text-2xl md:text-4xl font-black text-white mt-3">
-                +40 Ingenieros
-              </h3>
-              <p className="text-white/60 text-sm md:text-base mt-1">
-                Trabajando juntos hacia la victoria
-              </p>
-            </div>
-          </BentoCard>
         </ScrollReveal>
 
         {/* Leadership - 3 Vertical Portraits */}
