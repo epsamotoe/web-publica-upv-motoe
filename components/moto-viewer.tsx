@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 import { useInView } from "framer-motion"
 
 function Model() {
-    const { scene } = useGLTF("/models/BlenderCarbonFiber.glb")
+    const { scene } = useGLTF("/models/BlenderCarbonFiber.glb", true)
     return <primitive object={scene} />
 }
 
@@ -102,4 +102,4 @@ export function MotoViewer({ className }: { className?: string }) {
     )
 }
 
-useGLTF.preload("/models/BlenderCarbonFiber.glb")
+useGLTF.preload("/models/BlenderCarbonFiber.glb", true)
