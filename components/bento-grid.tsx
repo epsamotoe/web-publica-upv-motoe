@@ -2,29 +2,32 @@
 
 import { ScrollReveal } from "./scroll-reveal"
 import { BentoCard } from "@/components/ui/bento-card"
-
-const leaders = [
-  {
-    id: "team-leader",
-    role: "Team Leader",
-    name: "Carlos García",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&q=80",
-  },
-  {
-    id: "technical-director",
-    role: "Technical Director",
-    name: "María López",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop&q=80",
-  },
-  {
-    id: "head-mechanic",
-    role: "Head Mechanic",
-    name: "Pablo Martín",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&q=80",
-  },
-]
+import { useLanguage } from "@/context/LanguageContext"
 
 export function BentoGrid() {
+  const { t } = useLanguage()
+
+  const leaders = [
+    {
+      id: "team-leader",
+      role: t("team.role_coordinator"),
+      name: "Hugo Ruiz",
+      image: "/HugoPuto.jpeg",
+    },
+    {
+      id: "technical-director",
+      role: t("team.role_director"),
+      name: "Vicente Colomer",
+      image: "/VicentePuto.jpeg",
+    },
+    {
+      id: "ex-coordinador",
+      role: t("team.role_ex_coordinator"),
+      name: "Ricardo Sanchis",
+      image: "/RicardoPuto.jpeg",
+    },
+  ]
+
   return (
     <section id="moto" className="relative py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,13 +35,13 @@ export function BentoGrid() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 text-sm font-medium text-[#00cc88] bg-[#00cc88]/10 border border-[#00cc88]/20 rounded-full mb-4">
-              LIDERAZGO
+              {t("team.leadership_badge")}
             </span>
             <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl font-black text-white mb-4">
-              Nuestros <span className="text-[#00cc88]">Coordinadores</span>
+              {t("team.our")} <span className="text-[#00cc88]">{t("team.coordinators")}</span>
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto text-lg">
-              La dirección técnica y humana que impulsa el proyecto.
+              {t("team.direction_desc")}
             </p>
           </div>
         </ScrollReveal>
@@ -65,7 +68,7 @@ export function BentoGrid() {
                   <span className="text-xs font-mono tracking-wider text-[#00cc88] bg-[#00cc88]/10 px-3 py-1 rounded-full border border-[#00cc88]/30">
                     {leader.role.toUpperCase()}
                   </span>
-                  <h3 className="font-[family-name:var(--font-display)] text-xl md:text-2xl font-bold text-white mt-3 group-hover:text-[#00cc88] transition-colors">
+                  <h3 className="font-[family-name:var(--font-display)] text-xl md:text-2xl font-bold text-white mt-3 transition-colors">
                     {leader.name}
                   </h3>
                 </div>

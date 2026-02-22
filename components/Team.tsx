@@ -3,9 +3,11 @@
 import { useRef } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { useLanguage } from "@/context/LanguageContext"
 
 export function Team() {
     const containerRef = useRef<HTMLElement>(null)
+    const { t } = useLanguage()
 
     return (
         <section
@@ -21,9 +23,10 @@ export function Team() {
                 viewport={{ once: true, margin: "-10%" }}
             >
                 <Image
-                    src="/EquipoMoto.png"
+                    src="/EquipoMoto.webp"
                     alt="The Faces Behind The Machine"
                     fill
+                    sizes="100vw"
                     className="object-cover saturate-[0.8]"
                     priority={false}
                     loading="lazy"
@@ -45,8 +48,8 @@ export function Team() {
                     className="text-zinc-500 font-bold text-4xl md:text-6xl tracking-tight uppercase leading-[0.9]"
                     style={{ fontFamily: 'var(--font-display)' }}
                 >
-                    The Faces <br />
-                    <span className="text-zinc-400">Behind The Machine</span>
+                    {t("team.faces")} <br />
+                    <span className="text-zinc-400">{t("team.behind_machine")}</span>
                 </motion.h2>
             </div>
 
@@ -58,7 +61,7 @@ export function Team() {
                     transition={{ delay: 0.5, duration: 0.8 }}
                     className="text-[#00cc88] text-xs md:text-sm font-light tracking-[0.3em] uppercase"
                 >
-                    Valencia Motorsport Engineering <span className="mx-2">•</span> Season 2026
+                    {t("team.valencia_motorsport")} <span className="mx-2">•</span> {t("team.season_2026")}
                 </motion.p>
             </div>
         </section>

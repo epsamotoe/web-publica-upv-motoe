@@ -1,8 +1,8 @@
 "use client"
 
-import { Suspense, useRef } from "react"
+import { Suspense, useRef, useState } from "react"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls, Stage, useGLTF, Html, useProgress } from "@react-three/drei"
+import { OrbitControls, Stage, useGLTF, Html, useProgress, PerformanceMonitor, AdaptiveDpr } from "@react-three/drei"
 import { cn } from "@/lib/utils"
 import { useInView } from "framer-motion"
 
@@ -63,26 +63,31 @@ export function MotoViewer({ className }: { className?: string }) {
 
             {isInView && (
                 <Canvas
-                    dpr={[1, 1.5]}
+                    dpr={[1, 2]} // Allow higher quality initially, but let PerformanceMonitor throttle it down
                     gl={{
                         alpha: true,
                         antialias: false,
-                        powerPreference: "high-performance",
+                        powerPreference: "default", // Changed from high-performance to avoid thermal throttling
                         stencil: false,
-                        depth: true
+                        depth: true,
+                        failIfMajorPerformanceCaveat: true
                     }}
-                    camera={{ position: [0, 2, 6], fov: 40 }}
+                    camera={{ position: [1.0, 0.2, 2.0], fov: 30 }}
+                    performance={{ min: 0.5 }}
                 >
+                    <PerformanceMonitor onDecline={() => useGLTF.clear("/models/BlenderCarbonFiber.glb")} />
+                    <AdaptiveDpr pixelated />
                     <Suspense fallback={<Loader />}>
                         <Stage
                             environment="studio"
-                            intensity={1}
+                            intensity={0.8}
                             shadows={{
-                                type: 'contact',
+                                type: 'accumulative',
+                                color: '#0a0a0a',
+                                colorBlend: 2,
                                 opacity: 0.4,
-                                blur: 2,
-                                resolution: 512
                             }}
+                            adjustCamera={false}
                         >
                             <Model />
                         </Stage>

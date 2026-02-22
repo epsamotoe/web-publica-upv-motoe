@@ -1,0 +1,190 @@
+{
+    "nav": {
+        "home": "Home",
+        "history": "History",
+        "team": "Team",
+        "partners": "Partners",
+        "contact": "Contact"
+    },
+    "team": {
+        "faces": "The Faces",
+        "behind_machine": "Behind The Machine",
+        "valencia_motorsport": "Valencia Motorsport Engineering",
+        "season_2026": "Season 2026",
+        "leadership_badge": "LEADERSHIP",
+        "our": "Our",
+        "coordinators": "Coordinators",
+        "direction_desc": "The technical and human direction that drives the project.",
+        "role_coordinator": "Coordinator",
+        "role_director": "Team Director",
+        "role_ex_coordinator": "Ex-Coordinator",
+        "dept_mechanics": "Mechanics",
+        "dept_electrical": "Electrical",
+        "dept_admin": "Administration",
+        "dept_social": "Social Media",
+        "stat_members": "Members",
+        "stat_speed": "Top Speed (km/h)",
+        "stat_competitions": "Competitions",
+        "stat_seasons": "Seasons",
+        "members_lowercase": "members",
+        "team_badge": "THE TEAM",
+        "students_with": "Students with",
+        "ambition": "ambition",
+        "team_desc": "A multidisciplinary team of engineers, designers, and communicators united by the passion for electric motorsport.",
+        "join_team": "Join the team"
+    },
+    "home": {
+        "hero_explore": "Explore Engineering",
+        "specs_live": "Live Telemetry",
+        "specs_title1": "Technical",
+        "specs_title2": "Specifications",
+        "specs_power": "Power",
+        "specs_accel": "0-100 km/h",
+        "specs_speed": "Top Speed",
+        "specs_battery": "Battery",
+        "specs_weight": "Weight",
+        "specs_ecu": "ECU",
+        "ms_objective": "Objective:",
+        "ms_motostudent": "MotoStudent",
+        "ms_stage": "The Battle Stage: MotorLand Aragón",
+        "ms_desc": "The cathedral of speed. A FIM World Championship circuit where years of engineering, sacrifice, and sleepless nights culminate. We don't come to Aragón just to participate. We come to compete against the best in the world and prove that UPV engineering is here to WIN.",
+        "intro_eng": "Engineering",
+        "intro_exc": "Excellence",
+        "intro_desc": "We are UPV MotoE, the electric motorcycle racing team from Universitat Politècnica de València. We design, build, and race high-performance prototypes, merging technological innovation and sustainability.",
+        "intro_hist": "Our History",
+        "cta_ready": "Ready to",
+        "cta_collab": "Collaborate?",
+        "cta_partners": "View Partners",
+        "cta_contact": "Contact Now",
+        "social_connect": "Connect with",
+        "social_us": "Us",
+        "social_desc": "Join our community and don't miss a single detail from the 2026 season.",
+        "social_ig_desc": "Follow us for exclusive stories, workshop reels, and the team's daily life.",
+        "social_ig_cta": "Go to Instagram",
+        "social_tk_desc": "Discover the funniest and most viral side of engineering. Don't miss our trends!",
+        "social_tk_cta": "Go to TikTok",
+        "social_li_desc": "Connect with our professional network, technical achievements, and corporate news.",
+        "social_li_cta": "Go to LinkedIn"
+    },
+    "footer": {
+        "moto": "The Motorcycle"
+    },
+    "history": {
+        "title_data": "THE",
+        "title_data2": "DATA",
+        "title_track": "TRACK",
+        "back_home": "Back to Home",
+        "subtitle_log": "/// TELEMETRY_LOG_v2.0 // SCROLL_TO_INITIATE ///",
+        "end_transmission": "/// END OF TRANSMISSION ///",
+        "events": {
+            "2017": {
+                "title": "THE ORIGIN",
+                "desc": "The idea is born. A group of passionate students from UPV decides to challenge the status quo and found the MotoE team. The first sketches on napkins become CAD plans.",
+                "stat1": "Foundation",
+                "stat2": "Sept 2017"
+            },
+            "2018": {
+                "title": "FIRST PROTOTYPE",
+                "desc": "Our first participation in the V MotoStudent International Competition. The 'EME-18' hit the MotorLand Aragón asphalt for the first time, laying the foundations for future prototypes."
+            },
+            "2021": {
+                "title": "QUALITY LEAP",
+                "desc": "The 'EME-21' arrives. First fiberglass fairing. We had everything ready, but after qualifying, the BMS (battery controller) started failing, and we couldn't compete for safety reasons.",
+                "stat1": "100% Team",
+                "stat2": "Great Effort"
+            },
+            "2023": {
+                "title": "RETURN TO MOTORLAND",
+                "desc": "We returned to compete at MotorLand 2023 with great enthusiasm. We managed to finish in 16th place, affected by a motor controller failure that we couldn't optimize to 100% to extract its full power."
+            },
+            "2024": {
+                "title": "LEAP TO INNOVATION",
+                "desc": "It was a year of changes, we changed the entire motorcycle chassis, and designed a carbon fiber single-sided swingarm chassis.",
+                "stat1": "AI Traction",
+                "stat2": "Lap Record"
+            },
+            "2025": {
+                "title": "THE CARBON CHALLENGE",
+                "desc": "A year of pure ambition. We were ready to win with our new carbon single-sided swingarm chassis. However, at the last moment, the swingarm failed and we couldn't compete. A hard blow that only made us stronger.",
+                "stat1": "Carbon Chassis",
+                "stat2": "Swingarm Fail"
+            },
+            "2026": {
+                "title": "THE FUTURE: NEXT GEN",
+                "desc": "The current project. Carbon fiber monocoque chassis, axial flux motor, and solid-state batteries. We don't seek to compete, we seek to redefine the category.",
+                "stat1": "Target: 260 km/h",
+                "stat2": "< 200 kg"
+            }
+        }
+    },
+    "partners": {
+        "our_partners": "OUR PARTNERS",
+        "title1": "The Engine of The",
+        "title2": "Project",
+        "description": "Thanks to your trust and technical support, we transform designs into reality and compete at the highest level.",
+        "badge_access": "INTERNAL ACCESS",
+        "access_title1": "Don't just put your logo.",
+        "access_title2": "See how we work.",
+        "access_description": "With your Partner credentials, you integrate into our ecosystem. Monitor ongoing tasks, review chassis evolution, and provide feedback directly on the platform. We build the future together, task by task, commit by commit.",
+        "access_cta": "Request Partner Access",
+        "section_institutional": "Institutional Support",
+        "section_technical": "Technical Partners",
+        "visit_web": "Website",
+        "sponsors": {
+            "upv": {
+                "desc": "The Alcoy campus of the Universitat Politècnica de València is our home and main engine. Its constant support allows us to innovate and grow every season."
+            },
+            "generacion-espontanea": {
+                "desc": "The program that boosts university talent. Thanks to Generación Espontánea, we have the resources to take engineering beyond the classroom."
+            },
+            "division-creative-lab": {
+                "desc": "Creative design and branding studio. They transform our vision into a powerful and professional visual identity."
+            },
+            "3dexperience": {
+                "desc": "The leading 3D design and engineering platform. It allows us to model, simulate, and perfect every piece of the motorcycle."
+            },
+            "cadenas-moblat": {
+                "desc": "Specialists in transmission systems and industrial chains. Vital for power transfer in our prototype."
+            },
+            "gurit": {
+                "desc": "World leaders in advanced composite materials. They provide us with next-generation carbon fiber and resins for an ultralight chassis."
+            },
+            "power-electronics": {
+                "desc": "Innovation in power electronics. Their support is fundamental for efficient energy management in our electric motorcycle."
+            },
+            "solidcam": {
+                "desc": "The leading CAM software integrated with SolidWorks. Allows complex parts machining with maximum precision and efficiency."
+            },
+            "primaflor": {
+                "desc": "Commitment to quality and sustainability. A partner that helps keep the team nourished and energized."
+            },
+            "cafeteria": {
+                "desc": "The meeting point and energy recharge station for our engineers on campus."
+            }
+        }
+    },
+    "contact": {
+        "title1": "Contact",
+        "title2": "Us",
+        "description": "Do you have a project in mind or want to join our team? We are ready to listen.",
+        "info_title": "Contact Information",
+        "email_label": "EMAIL",
+        "address_label": "ADDRESS",
+        "address_text1": "Georgina Blanes Sports Pavilion.",
+        "address_text2": "Alarcón St, 1, 03801 Alcoy (Alicante)",
+        "follow_us": "Follow Us",
+        "form_title": "Send us a message",
+        "f_name": "NAME",
+        "f_name_ph": "Your name",
+        "f_email": "EMAIL",
+        "f_email_ph": "youremail@example.com",
+        "f_subject": "SUBJECT",
+        "f_subject_ph": "How can we help you?",
+        "f_message": "MESSAGE",
+        "f_message_ph": "Write your message here...",
+        "btn_sending": "SENDING...",
+        "btn_send": "SEND MESSAGE",
+        "msg_success": "Message sent successfully! We will get in touch soon.",
+        "msg_error": "There was an error sending the message. Please try again."
+    }
+}

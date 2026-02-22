@@ -1,0 +1,190 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "history": "Historia",
+        "team": "Equipo",
+        "partners": "Patrocinadores",
+        "contact": "Contacto"
+    },
+    "team": {
+        "faces": "The Faces",
+        "behind_machine": "Behind The Machine",
+        "valencia_motorsport": "Valencia Motorsport Engineering",
+        "season_2026": "Season 2026",
+        "leadership_badge": "LIDERAZGO",
+        "our": "Nuestros",
+        "coordinators": "Coordinadores",
+        "direction_desc": "La dirección técnica y humana que impulsa el proyecto.",
+        "role_coordinator": "Coordinador",
+        "role_director": "Director de Equipo",
+        "role_ex_coordinator": "Ex-Coordinador",
+        "dept_mechanics": "Mecánica",
+        "dept_electrical": "Eléctrica",
+        "dept_admin": "Administración",
+        "dept_social": "Social Media",
+        "stat_members": "Miembros",
+        "stat_speed": "Km/h Punta",
+        "stat_competitions": "Competiciones",
+        "stat_seasons": "Temporadas",
+        "members_lowercase": "miembros",
+        "team_badge": "EL EQUIPO",
+        "students_with": "Estudiantes con",
+        "ambition": "ambición",
+        "team_desc": "Un equipo multidisciplinar de ingenieros, diseñadores y comunicadores unidos por la pasión del motorsport eléctrico.",
+        "join_team": "Únete al equipo"
+    },
+    "home": {
+        "hero_explore": "Explorar Ingeniería",
+        "specs_live": "Live Telemetry",
+        "specs_title1": "Especificaciones",
+        "specs_title2": "Técnicas",
+        "specs_power": "Potencia",
+        "specs_accel": "0-100 km/h",
+        "specs_speed": "Vel. Punta",
+        "specs_battery": "Batería",
+        "specs_weight": "Peso",
+        "specs_ecu": "ECU",
+        "ms_objective": "Objetivo:",
+        "ms_motostudent": "MotoStudent",
+        "ms_stage": "El Escenario de la Batalla: MotorLand Aragón",
+        "ms_desc": "La catedral de la velocidad. Un circuito de Mundial FIM donde culminan años de ingeniería, sacrificio y noches sin dormir. No venimos a Aragón simplemente a participar. Venimos a competir contra los mejores del mundo y a demostrar que la ingeniería de la UPV está aquí para GANAR.",
+        "intro_eng": "Engineering",
+        "intro_exc": "Excellence",
+        "intro_desc": "Somos UPV MotoE, el equipo de competición de motos eléctricas de la Universitat Politècnica de València. Diseñamos, construimos y competimos con prototipos de alto rendimiento, fusionando innovación tecnológica y sostenibilidad.",
+        "intro_hist": "Nuestra Historia",
+        "cta_ready": "¿Listo para",
+        "cta_collab": "Colaborar?",
+        "cta_partners": "Ver Patrocinadores",
+        "cta_contact": "Contactar Ahora",
+        "social_connect": "Conecta con",
+        "social_us": "Nosotros",
+        "social_desc": "Únete a nuestra comunidad y no te pierdas ningún detalle de la temporada 2026.",
+        "social_ig_desc": "Síguenos para ver stories exclusivas, reels del taller y el día a día del equipo.",
+        "social_ig_cta": "Ir a Instagram",
+        "social_tk_desc": "Descubre el lado más divertido y viral de la ingeniería. ¡No te pierdas nuestros trends!",
+        "social_tk_cta": "Ir a TikTok",
+        "social_li_desc": "Conecta con nuestra red profesional, logros técnicos y noticias corporativas.",
+        "social_li_cta": "Ir a LinkedIn"
+    },
+    "footer": {
+        "moto": "La Moto"
+    },
+    "history": {
+        "title_data": "THE",
+        "title_data2": "DATA",
+        "title_track": "TRACK",
+        "back_home": "Volver al Inicio",
+        "subtitle_log": "/// TELEMETRY_LOG_v2.0 // SCROLL_TO_INITIATE ///",
+        "end_transmission": "/// END OF TRANSMISSION ///",
+        "events": {
+            "2017": {
+                "title": "EL ORIGEN",
+                "desc": "Nace la idea. Un grupo de estudiantes apasionados de la UPV decide desafiar el status quo y fundar el equipo de MotoE. Los primeros bocetos en servilletas se convierten en planos CAD.",
+                "stat1": "Fundación",
+                "stat2": "40 kW"
+            },
+            "2018": {
+                "title": "PRIMER PROTOTIPO",
+                "desc": "Nuestra primera participación en la V Competición Internacional MotoStudent. El 'EME-18' pisó el asfalto de MotorLand Aragón por primera vez, sentando las bases y realizando las pruebas cruciales para los prototipos futuros."
+            },
+            "2021": {
+                "title": "EL SALTO DE CALIDAD",
+                "desc": "Llega la 'EME-21'. Primer carenado de fibra de vidrio. Teníamos todo preparado, pero al acabar la clasificación empezó a fallar el BMS (controlador de baterías), y no pudimos competir por seguridad.",
+                "stat1": "100% Equipo",
+                "stat2": "Gran Esfuerzo"
+            },
+            "2023": {
+                "title": "EL REGRESO A MOTORLAND",
+                "desc": "Volvimos a competir en MotorLand 2023 con gran ilusión. Conseguimos terminar en el puesto 16, afectados por un fallo en el controlador del motor que no conseguimos optimizar al 100% para sacar toda su potencia."
+            },
+            "2024": {
+                "title": "SALTO A LA INNOVACIÓN",
+                "desc": "Fue un año de cambios, cambiamos el chasis de la moto entera, y diseñamos un chasis monobrazo de carbono.",
+                "stat1": "AI Traction",
+                "stat2": "Récord Vuelta"
+            },
+            "2025": {
+                "title": "EL DESAFÍO DEL CARBONO",
+                "desc": "Un año de ambición pura. Estábamos listos para ganar con nuestro primer chasis monobrazo de carbono. Sin embargo, en el último momento, el basculante nos dejó tirados y no pudimos competir. Un golpe duro que solo nos hizo más fuertes.",
+                "stat1": "Chasis Carbono",
+                "stat2": "Swingarm Fail"
+            },
+            "2026": {
+                "title": "EL FUTURO: NEXT GEN",
+                "desc": "El proyecto actual. Chasis monocasco de fibra de carbono, motor de flujo axial y baterías de estado sólido. No buscamos competir, buscamos redefinir la categoría.",
+                "stat1": "Target: 260 km/h",
+                "stat2": "< 200 kg"
+            }
+        }
+    },
+    "partners": {
+        "our_partners": "NUESTROS PARTNERS",
+        "title1": "El Motor Del",
+        "title2": "Proyecto",
+        "description": "Gracias a su confianza y apoyo técnico, transformamos diseños en realidad y competimos al más alto nivel.",
+        "badge_access": "ACCESO INTERNO",
+        "access_title1": "No solo pongas tu logo.",
+        "access_title2": "Mira cómo trabajamos.",
+        "access_description": "Con tus credenciales de Partner, te integras en nuestro ecosistema. Monitorea las tareas en curso, revisa la evolución del chasis y aporta tu feedback directamente en la plataforma. Construimos el futuro juntos, tarea a tarea, commit a commit.",
+        "access_cta": "Solicitar Acceso Partner",
+        "section_institutional": "Respaldo Institucional",
+        "section_technical": "Partners Técnicos",
+        "visit_web": "Web",
+        "sponsors": {
+            "upv": {
+                "desc": "El campus de Alcoy de la Universitat Politècnica de València es nuestro hogar y principal motor. Su apoyo constante nos permite innovar y crecer cada temporada."
+            },
+            "generacion-espontanea": {
+                "desc": "El programa que impulsa el talento universitario. Gracias a Generación Espontánea, contamos con los recursos para llevar la ingeniería más allá de las aulas."
+            },
+            "division-creative-lab": {
+                "desc": "Estudio de diseño creativo y branding. Transforman nuestra visión en una identidad visual potente y profesional."
+            },
+            "3dexperience": {
+                "desc": "La plataforma líder en diseño e ingeniería 3D. Nos permite modelar, simular y perfecciónar cada pieza de la motocicleta."
+            },
+            "cadenas-moblat": {
+                "desc": "Especialistas en sistemas de transmisión y cadenas industriales. Vitales para la transferencia de potencia en nuestro prototipo."
+            },
+            "gurit": {
+                "desc": "Líderes mundiales en materiales compuestos avanzados. Nos proveen de fibra de carbono y resinas de última generación para un chasis ultraligero."
+            },
+            "power-electronics": {
+                "desc": "Innovación en electrónica de potencia. Su apoyo es fundamental para la gestión eficiente de la energía en nuestra moto eléctrica."
+            },
+            "solidcam": {
+                "desc": "El software CAM líder integrado en SolidWorks. Permite mecanizar nuestras piezas complejas con máxima precisión y eficiencia."
+            },
+            "primaflor": {
+                "desc": "Compromiso con la calidad y la sostenibilidad. Un partner que nos ayuda a mantener al equipo alimentado y con energía."
+            },
+            "cafeteria": {
+                "desc": "El punto de encuentro y recarga de energía para nuestros ingenieros en el campus."
+            }
+        }
+    },
+    "contact": {
+        "title1": "Contacta con",
+        "title2": "Nosotros",
+        "description": "¿Tienes un proyecto en mente o quieres unirte a nuestro equipo? Estamos listos para escucharte.",
+        "info_title": "Información de Contacto",
+        "email_label": "EMAIL",
+        "address_label": "DIRECCIÓN",
+        "address_text1": "Pabellón Deportivo Georgina Blanes.",
+        "address_text2": "C/ Alarcón, 1, 03801 Alcoy (Alicante)",
+        "follow_us": "Síguenos",
+        "form_title": "Envíanos un mensaje",
+        "f_name": "NOMBRE",
+        "f_name_ph": "Tu nombre",
+        "f_email": "EMAIL",
+        "f_email_ph": "tucorreo@ejemplo.com",
+        "f_subject": "ASUNTO",
+        "f_subject_ph": "¿En qué podemos ayudarte?",
+        "f_message": "MENSAJE",
+        "f_message_ph": "Escribe tu mensaje aquí...",
+        "btn_sending": "ENVIANDO...",
+        "btn_send": "ENVIAR MENSAJE",
+        "msg_success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+        "msg_error": "Hubo un error al enviar el mensaje. Inténtalo de nuevo."
+    }
+}

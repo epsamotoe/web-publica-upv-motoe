@@ -3,22 +3,24 @@
 import { ScrollReveal } from "./scroll-reveal"
 import { AnimatedGrid } from "./animated-grid"
 import { BentoCard } from "@/components/ui/bento-card"
-
-const departments = [
-  { name: "Powertrain", count: 8, color: "#00cc88" },
-  { name: "Chasis", count: 6, color: "#00cc88" },
-  { name: "Electrónica", count: 7, color: "#00cc88" },
-  { name: "Business", count: 5, color: "#00cc88" },
-]
-
-const stats = [
-  { value: "26", suffix: "+", label: "Miembros" },
-  { value: "250", suffix: "+", label: "Km/h Punta" },
-  { value: "3", suffix: "", label: "Podios Históricos" },
-  { value: "8", suffix: "", label: "Temporadas" },
-]
+import { useLanguage } from "@/context/LanguageContext"
 
 export function TeamSection() {
+  const { t } = useLanguage()
+
+  const departments = [
+    { name: t("team.dept_mechanics"), count: 14, color: "#00cc88" },
+    { name: t("team.dept_electrical"), count: 14, color: "#00cc88" },
+    { name: t("team.dept_admin"), count: 11, color: "#00cc88" },
+    { name: t("team.dept_social"), count: 4, color: "#00cc88" },
+  ]
+
+  const stats = [
+    { value: "40", suffix: "+", label: t("team.stat_members") },
+    { value: "5", suffix: "", label: t("team.stat_competitions") },
+    { value: "9", suffix: "", label: t("team.stat_seasons") },
+  ]
+
   return (
     <section id="equipo" className="relative py-24 md:py-32 overflow-hidden">
       <AnimatedGrid />
@@ -28,22 +30,21 @@ export function TeamSection() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 text-sm font-medium text-[#00cc88] bg-[#00cc88]/10 border border-[#00cc88]/20 rounded-full mb-4">
-              EL EQUIPO
+              {t("team.team_badge")}
             </span>
             <h2 className="font-[family-name:var(--font-display)] text-5xl md:text-7xl font-black uppercase tracking-tighter text-white leading-[0.9] mb-4">
-              Estudiantes con{" "}
-              <span className="text-[#00cc88]">ambición</span>
+              {t("team.students_with")}{" "}
+              <span className="text-[#00cc88]">{t("team.ambition")}</span>
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto text-lg">
-              Un equipo multidisciplinar de ingenieros, diseñadores y comunicadores
-              unidos por la pasión del motorsport eléctrico.
+              {t("team.team_desc")}
             </p>
           </div>
         </ScrollReveal>
 
         {/* Stats Grid */}
         <ScrollReveal delay={100}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
             {stats.map((stat) => (
               <BentoCard
                 key={stat.label}
@@ -82,7 +83,7 @@ export function TeamSection() {
                 <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-white group-hover:text-[#00cc88] transition-colors">
                   {dept.name}
                 </h3>
-                <p className="text-sm text-white/40 mt-1">miembros</p>
+                <p className="text-sm text-white/40 mt-1">{t("team.members_lowercase")}</p>
               </BentoCard>
             ))}
           </div>
@@ -92,10 +93,10 @@ export function TeamSection() {
         <ScrollReveal delay={300}>
           <div className="text-center mt-16">
             <a
-              href="#contacto"
+              href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-[#00cc88] text-[#00cc88] font-bold rounded-full hover:bg-[#00cc88] hover:text-[#0a0a0a] transition-all"
             >
-              Únete al equipo
+              {t("team.join_team")}
               <span className="text-lg">→</span>
             </a>
           </div>
