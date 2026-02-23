@@ -16,9 +16,9 @@ export function Navigation() {
 
   const navItems = [
     { label: t("nav.home"), href: "/" },
-    { label: t("nav.history"), href: "/historia" },
-    { label: t("nav.team"), href: "/team" },
-    { label: t("nav.partners"), href: "/partners" },
+    { label: t("nav.history"), href: "/historia/" },
+    { label: t("nav.team"), href: "/team/" },
+    { label: t("nav.partners"), href: "/partners/" },
   ]
 
   const languages: { code: Language; name: string }[] = [
@@ -92,8 +92,8 @@ export function Navigation() {
             </div>
 
             <Link
-              href="/contact"
-              className={`ml-4 px-6 py-2.5 font-bold text-sm rounded-full hover:shadow-[0_0_25px_rgba(0,204,136,0.5)] transition-all hover:scale-105 ${isActive('/contact')
+              href="/contact/"
+              className={`ml-4 px-6 py-2.5 font-bold text-sm rounded-full hover:shadow-[0_0_25px_rgba(0,204,136,0.5)] transition-all hover:scale-105 ${isActive('/contact/')
                 ? "bg-[#00cc88] text-[#0a0a0a] shadow-[0_0_15px_rgba(0,204,136,0.3)]"
                 : "bg-[#00cc88] text-[#0a0a0a]"
                 }`}
@@ -154,7 +154,7 @@ export function Navigation() {
           </div>
 
           <Link
-            href="/contact"
+            href="/contact/"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block mt-4 px-4 py-3 bg-[#00cc88] text-[#0a0a0a] font-bold text-center rounded-lg"
           >

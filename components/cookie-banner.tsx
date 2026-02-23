@@ -41,7 +41,7 @@ export function CookieBanner() {
                         <div className="flex-1">
                             <p className="text-sm md:text-base text-neutral-300 font-sans">
                                 Utilizamos cookies técnicas y analíticas para asegurar que disfrutes de la mejor experiencia de navegación y rendimiento en nuestro sitio web.{" "}
-                                <Link href="/cookies" className="text-[#00cc88] hover:underline underline-offset-4 transition-all">
+                                <Link href="/cookies/" className="text-[#00cc88] hover:underline underline-offset-4 transition-all">
                                     Más información
                                 </Link>
                                 .

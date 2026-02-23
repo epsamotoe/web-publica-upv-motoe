@@ -68,12 +68,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="hover:text-[#00cc88] transition-colors block">
+                <Link href="/team/" className="hover:text-[#00cc88] transition-colors block">
                   {t("nav.team")}
                 </Link>
               </li>
               <li>
-                <Link href="/partners" className="hover:text-[#00cc88] transition-colors block">
+                <Link href="/partners/" className="hover:text-[#00cc88] transition-colors block">
                   {t("nav.partners")}
                 </Link>
               </li>
@@ -105,13 +105,13 @@ export function Footer() {
             &copy; {new Date().getFullYear()} UPV MotoE Team. Todos los derechos reservados.
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-neutral-500">
-            <Link href="/aviso-legal" className="hover:text-white transition-colors">
+            <Link href="/aviso-legal/" className="hover:text-white transition-colors">
               Aviso Legal
             </Link>
-            <Link href="/privacidad" className="hover:text-white transition-colors">
+            <Link href="/privacidad/" className="hover:text-white transition-colors">
               Privacidad
             </Link>
-            <Link href="/cookies" className="hover:text-white transition-colors">
+            <Link href="/cookies/" className="hover:text-white transition-colors">
               Cookies
             </Link>
           </div>

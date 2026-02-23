@@ -185,6 +185,7 @@ const SponsorModal = ({ sponsor, onClose }: { sponsor: Sponsor, onClose: () => v
                             src={sponsor.logo}
                             alt={sponsor.name}
                             fill
+                            sizes="128px"
                             className="object-contain"
                         />
                     </div>
@@ -308,7 +309,7 @@ export default function PartnersPage() {
                                 {t("partners.access_description")}
                             </p>
 
-                            <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-[#00cc88] transition-all duration-300 group-hover:pl-8">
+                            <Link href="/contact/" className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-[#00cc88] transition-all duration-300 group-hover:pl-8">
                                 {t("partners.access_cta")}
                                 <ArrowRight size={18} />
                             </Link>

@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
         const mailOptions = {
             from: process.env.GMAIL_USER, // Sender address (must be the authenticated user)
-            to: process.env.GMAIL_USER,   // Receive email in the same inbox
+            to: 'epsamotoe@epsa.upv.es',   // Receive email in the institutional inbox
             replyTo: email,               // Reply to the user's email
             subject: `[WEB CONTACTO] ${subject}`,
             text: `Has recibido un nuevo mensaje de contacto.\n\nNombre: ${name}\nEmail: ${email}\nAsunto: ${subject}\n\nMensaje:\n${message}`,

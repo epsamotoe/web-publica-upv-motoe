@@ -88,8 +88,8 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-zinc-500 font-mono mb-1">{t("contact.email_label")}</p>
-                                    <a href="mailto:epsamotoe@gmail.com" className="text-lg hover:text-[#00cc88] transition-colors">
-                                        epsamotoe@gmail.com
+                                    <a href="mailto:epsamotoe@epsa.upv.es" className="text-lg hover:text-[#00cc88] transition-colors">
+                                        epsamotoe@epsa.upv.es
                                     </a>
                                 </div>
                             </div>

@@ -37,6 +37,7 @@ export default function HomePage() {
             src="/circuitoMotorland.webp"
             alt="Circuito MotorLand Aragón"
             fill
+            sizes="100vw"
             className="object-cover opacity-60 brightness-[0.7]"
           />
         </motion.div>
@@ -81,7 +82,7 @@ export default function HomePage() {
         <p className="text-zinc-400 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
           {t("home.intro_desc")}
         </p>
-        <Link href="/historia" className="group inline-flex items-center gap-2 px-8 py-3 border border-white/20 hover:border-[#00cc88] hover:text-[#00cc88] rounded-full transition-all uppercase tracking-widest text-sm font-bold">
+        <Link href="/historia/" className="group inline-flex items-center gap-2 px-8 py-3 border border-white/20 hover:border-[#00cc88] hover:text-[#00cc88] rounded-full transition-all uppercase tracking-widest text-sm font-bold">
           {t("home.intro_hist")}
           <span className="group-hover:translate-x-1 transition-transform">→</span>
         </Link>
@@ -95,10 +96,10 @@ export default function HomePage() {
             {t("home.cta_ready")} <span className="text-[#00cc88]">{t("home.cta_collab")}</span>
           </h2>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-            <Link href="/partners" className="px-8 py-4 bg-[#00cc88] text-black font-bold text-lg rounded-full hover:bg-[#00bb77] hover:shadow-[0_0_30px_rgba(0,204,136,0.4)] transition-all min-w-[200px]">
+            <Link href="/partners/" className="px-8 py-4 bg-[#00cc88] text-black font-bold text-lg rounded-full hover:bg-[#00bb77] hover:shadow-[0_0_30px_rgba(0,204,136,0.4)] transition-all min-w-[200px]">
               {t("home.cta_partners")}
             </Link>
-            <Link href="/contact" className="px-8 py-4 bg-transparent border-2 border-white/20 hover:border-[#00cc88] text-white hover:text-[#00cc88] font-bold text-lg rounded-full transition-all min-w-[200px]">
+            <Link href="/contact/" className="px-8 py-4 bg-transparent border-2 border-white/20 hover:border-[#00cc88] text-white hover:text-[#00cc88] font-bold text-lg rounded-full transition-all min-w-[200px]">
               {t("home.cta_contact")}
             </Link>
           </div>

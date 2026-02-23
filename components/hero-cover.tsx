@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import { ChevronDown } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import { useLanguage } from "@/context/LanguageContext"
 
 export function HeroCover() {
@@ -49,15 +48,14 @@ export function HeroCover() {
                     transition={{ delay: 1, duration: 0.5 }}
                     className="absolute bottom-16"
                 >
-                    <Link
-                        href="/machine"
-                        className="group flex flex-col items-center gap-2 text-white/80 hover:text-[#00cc88] transition-colors"
+                    <div
+                        className="group flex flex-col items-center gap-2 text-white/80 transition-colors"
                     >
                         <span className="text-sm font-bold uppercase tracking-[0.3em]">{t("home.hero_explore")}</span>
-                        <div className="p-2 rounded-full border border-white/20 group-hover:border-[#00cc88] transition-colors">
+                        <div className="p-2 rounded-full border border-white/20 transition-colors">
                             <ChevronDown className="w-6 h-6 animate-bounce" />
                         </div>
-                    </Link>
+                    </div>
                 </motion.div>
             </div>
         </section>

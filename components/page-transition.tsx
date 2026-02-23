@@ -52,6 +52,7 @@ export default function PageTransition({
                             src="/MurcielagoUPV.png"
                             alt="UPV MotoE Logo"
                             fill
+                            sizes="(max-width: 768px) 160px, 240px"
                             className="object-contain"
                             priority
                         />

@@ -93,7 +93,7 @@ export function TeamSection() {
         <ScrollReveal delay={300}>
           <div className="text-center mt-16">
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-[#00cc88] text-[#00cc88] font-bold rounded-full hover:bg-[#00cc88] hover:text-[#0a0a0a] transition-all"
             >
               {t("team.join_team")}
