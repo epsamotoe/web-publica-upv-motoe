@@ -70,9 +70,9 @@
         "moto": "The Motorcycle"
     },
     "history": {
-        "title_data": "THE",
-        "title_data2": "DATA",
-        "title_track": "TRACK",
+        "title_data": "OUR",
+        "title_data2": "HISTORY",
+        "title_track": "",
         "back_home": "Back to Home",
         "subtitle_log": "/// TELEMETRY_LOG_v2.0 // SCROLL_TO_INITIATE ///",
         "end_transmission": "/// END OF TRANSMISSION ///",

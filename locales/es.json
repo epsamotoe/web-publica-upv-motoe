@@ -7,8 +7,8 @@
         "contact": "Contacto"
     },
     "team": {
-        "faces": "The Faces",
-        "behind_machine": "Behind The Machine",
+        "faces": "Las Caras",
+        "behind_machine": "Detrás de la Máquina",
         "valencia_motorsport": "Valencia Motorsport Engineering",
         "season_2026": "Season 2026",
         "leadership_badge": "LIDERAZGO",
@@ -70,9 +70,9 @@
         "moto": "La Moto"
     },
     "history": {
-        "title_data": "THE",
-        "title_data2": "DATA",
-        "title_track": "TRACK",
+        "title_data": "NUESTRA",
+        "title_data2": "HISTORIA",
+        "title_track": "",
         "back_home": "Volver al Inicio",
         "subtitle_log": "/// TELEMETRY_LOG_v2.0 // SCROLL_TO_INITIATE ///",
         "end_transmission": "/// END OF TRANSMISSION ///",
