@@ -1,7 +1,6 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Rajdhani, Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Navigation } from "@/components/navigation"
 import { CookieBanner } from "@/components/cookie-banner"
@@ -35,14 +34,12 @@ export default function RootLayout({
         <div className="fixed inset-0 z-[-1] bg-engineering-grid opacity-20 pointer-events-none" />
         <div className="bg-noise" />
 
-
         <LanguageProvider>
           <Navigation />
           <PageTransition>
             {children}
           </PageTransition>
         </LanguageProvider>
-        <Analytics />
         <CookieBanner />
       </body>
     </html>
