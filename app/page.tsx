@@ -42,26 +42,25 @@ export default function HomePage() {
           />
         </motion.div>
 
-        {/* Layer 2: Gradient Overlay (Bottom readability) */}
-        {/* Layer 2: Gradient Overlay (Bottom readability + Vignette) */}
+        {/* Layer 2: Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/80 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#0a0a0a_100%)] opacity-70" />
 
         {/* Layer 3: Cinematic Content */}
-        <div className="absolute bottom-0 left-0 w-full p-8 md:p-16 pb-12 md:pb-24 z-10">
-          <div className="max-w-7xl mx-auto flex items-end gap-6 md:gap-10">
+        <div className="absolute bottom-0 left-0 w-full p-5 md:p-16 pb-10 md:pb-24 z-10 overflow-x-hidden">
+          <div className="max-w-7xl mx-auto flex items-end gap-4 md:gap-10">
 
-            {/* Racing Line */}
-            <div className="w-1 md:w-2 h-32 md:h-64 bg-[#00cc88] flex-shrink-0" />
+            {/* Racing Line - hidden on smallest screens to save space */}
+            <div className="hidden sm:block w-1 md:w-2 h-20 md:h-64 bg-[#00cc88] flex-shrink-0" />
 
-            <div className="mb-2">
-              <h2 className="text-6xl md:text-8xl font-black text-white uppercase leading-[0.9] mb-4">
+            <div className="mb-2 min-w-0 flex-1">
+              <h2 className="text-4xl sm:text-5xl md:text-8xl font-black text-white uppercase leading-[0.9] mb-3 md:mb-4 break-words">
                 {t("home.ms_objective")} <br /> {t("home.ms_motostudent")}
               </h2>
-              <h3 className="text-[#00cc88] text-xl md:text-3xl font-bold uppercase tracking-wider mb-6">
+              <h3 className="text-[#00cc88] text-base sm:text-xl md:text-3xl font-bold uppercase tracking-wider mb-4 md:mb-6 leading-snug">
                 {t("home.ms_stage")}
               </h3>
-              <p className="text-zinc-200 max-w-2xl text-lg md:text-xl font-medium leading-relaxed drop-shadow-md">
+              <p className="text-zinc-200 max-w-2xl text-sm sm:text-base md:text-xl font-medium leading-relaxed drop-shadow-md">
                 {t("home.ms_desc")}
               </p>
             </div>
@@ -89,17 +88,17 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 px-4 relative overflow-hidden border-t border-white/5">
+      <section className="py-20 md:py-32 px-4 relative overflow-hidden border-t border-white/5">
         <div className="absolute inset-0 bg-[#00cc88]/5 pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-black font-[family-name:var(--font-display)] uppercase mb-8">
+          <h2 className="text-3xl md:text-6xl font-black font-[family-name:var(--font-display)] uppercase mb-8">
             {t("home.cta_ready")} <span className="text-[#00cc88]">{t("home.cta_collab")}</span>
           </h2>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-            <Link href="/partners/" className="px-8 py-4 bg-[#00cc88] text-black font-bold text-lg rounded-full hover:bg-[#00bb77] hover:shadow-[0_0_30px_rgba(0,204,136,0.4)] transition-all min-w-[200px]">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center w-full">
+            <Link href="/partners/" className="w-full sm:w-auto text-center px-8 py-4 bg-[#00cc88] text-black font-bold text-lg rounded-full hover:bg-[#00bb77] hover:shadow-[0_0_30px_rgba(0,204,136,0.4)] transition-all min-w-[200px]">
               {t("home.cta_partners")}
             </Link>
-            <Link href="/contact/" className="px-8 py-4 bg-transparent border-2 border-white/20 hover:border-[#00cc88] text-white hover:text-[#00cc88] font-bold text-lg rounded-full transition-all min-w-[200px]">
+            <Link href="/contact/" className="w-full sm:w-auto text-center px-8 py-4 bg-transparent border-2 border-white/20 hover:border-[#00cc88] text-white hover:text-[#00cc88] font-bold text-lg rounded-full transition-all min-w-[200px]">
               {t("home.cta_contact")}
             </Link>
           </div>
