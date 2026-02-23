@@ -58,7 +58,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group" prefetch={false}>
             <div className="relative w-32 md:w-40 h-10 md:h-12 flex items-center">
               <Image
                 src="/logo.png"
@@ -77,6 +77,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className={`px-4 py-2 text-sm font-medium transition-colors rounded-full hover:bg-white/5 ${isActive(item.href)
                   ? "text-[#00cc88]"
                   : "text-white/70 hover:text-[#00cc88]"
@@ -93,6 +94,7 @@ export function Navigation() {
 
             <Link
               href="/contact/"
+              prefetch={false}
               className={`ml-4 px-6 py-2.5 font-bold text-sm rounded-full hover:shadow-[0_0_25px_rgba(0,204,136,0.5)] transition-all hover:scale-105 ${isActive('/contact/')
                 ? "bg-[#00cc88] text-[#0a0a0a] shadow-[0_0_15px_rgba(0,204,136,0.3)]"
                 : "bg-[#00cc88] text-[#0a0a0a]"
@@ -124,6 +126,7 @@ export function Navigation() {
             <Link
               key={item.href}
               href={item.href}
+              prefetch={false}
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block px-4 py-3 rounded-lg transition-colors ${isActive(item.href)
                 ? "text-[#00cc88] bg-white/5"
@@ -155,6 +158,7 @@ export function Navigation() {
 
           <Link
             href="/contact/"
+            prefetch={false}
             onClick={() => setIsMobileMenuOpen(false)}
             className="block mt-4 px-4 py-3 bg-[#00cc88] text-[#0a0a0a] font-bold text-center rounded-lg"
           >
