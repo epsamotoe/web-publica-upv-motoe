@@ -18,7 +18,9 @@ export const metadata: Metadata = {
   title: 'UPV MotoE Team | Electric Racing Excellence',
   description: 'UPV MotoE - Equipo de competición de motos eléctricas de la Universitat Politècnica de València. Ingeniería, velocidad y sostenibilidad.',
   generator: 'v0.app',
-
+  icons: {
+    icon: '/upvLogo.png',
+  },
 }
 
 export default function RootLayout({
