@@ -28,7 +28,7 @@ export function ContactSection() {
               {/* Contact Info */}
               <div className="space-y-4 mb-8">
                 <a
-                  href="mailto:info@upvmotoe.com"
+                  href="mailto:upvmotoe@upv.es"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-[#111] border border-[#222] hover:border-[#00cc88]/40 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-[#00cc88]/10 flex items-center justify-center group-hover:bg-[#00cc88]/20 transition-colors">
@@ -36,7 +36,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="text-sm text-white/50">Email</div>
-                    <div className="text-white font-medium">info@upvmotoe.com</div>
+                    <div className="text-white font-medium">upvmotoe@upv.es</div>
                   </div>
                 </a>
                 <div className="flex items-center gap-4 p-4 rounded-2xl bg-[#111] border border-[#222]">

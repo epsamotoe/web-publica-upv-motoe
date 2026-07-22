@@ -90,8 +90,8 @@ export function Footer() {
                 Pabellón Deportivo Georgina Blanes. C/ Alarcón, 1.
               </p>
               <p className="pt-2">
-                <a href="mailto:contacto@upvmotoe.com" className="hover:text-[#00cc88] transition-colors">
-                  contacto@upvmotoe.com
+                <a href="mailto:upvmotoe@upv.es" className="hover:text-[#00cc88] transition-colors">
+                  upvmotoe@upv.es
                 </a>
               </p>
             </div>

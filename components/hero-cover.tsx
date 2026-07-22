@@ -14,7 +14,7 @@ export function HeroCover() {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/MotoHome.jpg"
-                    alt="UPV MotoE Racing Prototype"
+                    alt="UPV MotoE - Equipo de competición de motos eléctricas UPV Electric Team"
                     fill
                     priority
                     className="object-cover object-center md:object-top opacity-90"
@@ -39,6 +39,7 @@ export function HeroCover() {
                     <h1 className="font-sans text-[15vw] md:text-[12vw] font-black uppercase tracking-tighter text-white leading-[0.8] drop-shadow-2xl">
                         UPV <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">MOTOE</span>
                     </h1>
+                    <h2 className="sr-only">Equipo de Competición de Motos Eléctricas de la Universitat Politècnica de València</h2>
                 </motion.div>
 
                 {/* Action Button */}

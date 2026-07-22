@@ -54,7 +54,7 @@ export default function PrivacidadPage() {
                     <section>
                         <h2 className="text-xl font-bold text-white mb-4">4. Derechos del Usuario</h2>
                         <p>
-                            Cualquier usuario que ponga a nuestra disposición sus datos puede ejercer sus derechos de <strong>acceso, rectificación, cancelación, oposición, limitación del tratamiento y portabilidad</strong> remitiendo su solicitud a nuestro email de contacto (contacto@upvmotoe.com), incluyendo copia del DNI u otro documento análogo en derecho para garantizar el tracto de la respuesta.
+                            Cualquier usuario que ponga a nuestra disposición sus datos puede ejercer sus derechos de <strong>acceso, rectificación, cancelación, oposición, limitación del tratamiento y portabilidad</strong> remitiendo su solicitud a nuestro email de contacto (upvmotoe@upv.es), incluyendo copia del DNI u otro documento análogo en derecho para garantizar el tracto de la respuesta.
                         </p>
                     </section>
                 </div>

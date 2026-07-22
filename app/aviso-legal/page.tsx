@@ -32,7 +32,7 @@ export default function AvisoLegalPage() {
                             <li><strong>Titular:</strong> UPV MotoE (Proyecto de Generación Espontánea)</li>
                             <li><strong>Entidad Matriz:</strong> Universitat Politècnica de València - Campus de Alcoy</li>
                             <li><strong>Dirección:</strong> Pabellón Deportivo Georgina Blanes. C/ Alarcón, 1, 03801 Alcoy (Alicante)</li>
-                            <li><strong>Email de contacto:</strong> contacto@upvmotoe.com</li>
+                            <li><strong>Email de contacto:</strong> upvmotoe@upv.es</li>
                         </ul>
                     </section>
 
