@@ -15,7 +15,7 @@ export function TechSpecs() {
         <section id="specs" className="relative min-h-screen w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-20 px-4 md:px-8">
 
             {/* Background Texture */}
-            <div className="absolute inset-0 bg-[url('/carbon-fiber.svg')] opacity-5 pointer-events-none" />
+            <div className="absolute inset-0 bg-carbon-fiber opacity-5 pointer-events-none" />
 
             {/* Section Header */}
             <motion.div
